@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1FD477252553010054271D /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD470252553010054271D /* DecimalMinusTextField.swift */; };
+		5E1FD478252553010054271D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD471252553010054271D /* SettingsViewController.swift */; };
+		5E1FD479252553010054271D /* ActionButtonCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD472252553010054271D /* ActionButtonCalc.swift */; };
+		5E1FD47A252553010054271D /* UnitsAndModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD473252553010054271D /* UnitsAndModes.swift */; };
+		5E1FD47C252553010054271D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E1FD475252553010054271D /* Main.storyboard */; };
+		5E1FD47D252553010054271D /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD476252553010054271D /* ColorViewController.swift */; };
 		5E4FCB1A251EE89100F28714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB19251EE89100F28714 /* AppDelegate.swift */; };
 		5E4FCB1C251EE89100F28714 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB1B251EE89100F28714 /* SceneDelegate.swift */; };
 		5E4FCB23251EE89A00F28714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4FCB22251EE89A00F28714 /* Assets.xcassets */; };
 		5E4FCB26251EE89A00F28714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4FCB24251EE89A00F28714 /* LaunchScreen.storyboard */; };
 		5E4FCB31251EE89B00F28714 /* ConverterPrj3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB30251EE89B00F28714 /* ConverterPrj3Tests.swift */; };
 		5E4FCB3C251EE89B00F28714 /* ConverterPrj3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB3B251EE89B00F28714 /* ConverterPrj3UITests.swift */; };
-		5E4FCB4E251F019600F28714 /* UnitsAndModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB4D251F019600F28714 /* UnitsAndModes.swift */; };
-		5E4FCB50251F021300F28714 /* ActionButtonCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB4F251F021300F28714 /* ActionButtonCalc.swift */; };
-		5E4FCB52251F11A500F28714 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB51251F11A500F28714 /* DecimalMinusTextField.swift */; };
-		5E4FCB54251F11DA00F28714 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB53251F11DA00F28714 /* SettingsViewController.swift */; };
-		5E4FCB58251F295B00F28714 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB57251F295B00F28714 /* ColorViewController.swift */; };
-		5E4FCB60251F88BA00F28714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4FCB5F251F88BA00F28714 /* Main.storyboard */; };
 		5E4FCB62251FB92500F28714 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB61251FB92400F28714 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E1FD470252553010054271D /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecimalMinusTextField.swift; path = ../../ConverterPrj31/ConverterPrj3/DecimalMinusTextField.swift; sourceTree = "<group>"; };
+		5E1FD471252553010054271D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../../ConverterPrj31/ConverterPrj3/SettingsViewController.swift; sourceTree = "<group>"; };
+		5E1FD472252553010054271D /* ActionButtonCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionButtonCalc.swift; path = ../../ConverterPrj31/ConverterPrj3/ActionButtonCalc.swift; sourceTree = "<group>"; };
+		5E1FD473252553010054271D /* UnitsAndModes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnitsAndModes.swift; path = ../../ConverterPrj31/ConverterPrj3/UnitsAndModes.swift; sourceTree = "<group>"; };
+		5E1FD475252553010054271D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5E1FD476252553010054271D /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorViewController.swift; path = ../../ConverterPrj31/ConverterPrj3/ColorViewController.swift; sourceTree = "<group>"; };
 		5E4FCB16251EE89100F28714 /* ConverterPrj3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConverterPrj3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4FCB19251EE89100F28714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E4FCB1B251EE89100F28714 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,12 +58,6 @@
 		5E4FCB37251EE89B00F28714 /* ConverterPrj3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConverterPrj3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4FCB3B251EE89B00F28714 /* ConverterPrj3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterPrj3UITests.swift; sourceTree = "<group>"; };
 		5E4FCB3D251EE89B00F28714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E4FCB4D251F019600F28714 /* UnitsAndModes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnitsAndModes.swift; path = ../../UnitsAndModes.swift; sourceTree = "<group>"; };
-		5E4FCB4F251F021300F28714 /* ActionButtonCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionButtonCalc.swift; path = ../../ActionButtonCalc.swift; sourceTree = "<group>"; };
-		5E4FCB51251F11A500F28714 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecimalMinusTextField.swift; path = ../../DecimalMinusTextField.swift; sourceTree = "<group>"; };
-		5E4FCB53251F11DA00F28714 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../../SettingsViewController.swift; sourceTree = "<group>"; };
-		5E4FCB57251F295B00F28714 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorViewController.swift; path = ../../ColorViewController.swift; sourceTree = "<group>"; };
-		5E4FCB5F251F88BA00F28714 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../Main.storyboard; sourceTree = "<group>"; };
 		5E4FCB61251FB92400F28714 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,15 +109,15 @@
 		5E4FCB18251EE89100F28714 /* ConverterPrj3 */ = {
 			isa = PBXGroup;
 			children = (
+				5E1FD472252553010054271D /* ActionButtonCalc.swift */,
+				5E1FD476252553010054271D /* ColorViewController.swift */,
+				5E1FD470252553010054271D /* DecimalMinusTextField.swift */,
+				5E1FD471252553010054271D /* SettingsViewController.swift */,
+				5E1FD473252553010054271D /* UnitsAndModes.swift */,
 				5E4FCB61251FB92400F28714 /* ViewController.swift */,
-				5E4FCB57251F295B00F28714 /* ColorViewController.swift */,
-				5E4FCB53251F11DA00F28714 /* SettingsViewController.swift */,
-				5E4FCB51251F11A500F28714 /* DecimalMinusTextField.swift */,
-				5E4FCB4F251F021300F28714 /* ActionButtonCalc.swift */,
-				5E4FCB4D251F019600F28714 /* UnitsAndModes.swift */,
 				5E4FCB19251EE89100F28714 /* AppDelegate.swift */,
 				5E4FCB1B251EE89100F28714 /* SceneDelegate.swift */,
-				5E4FCB5F251F88BA00F28714 /* Main.storyboard */,
+				5E1FD475252553010054271D /* Main.storyboard */,
 				5E4FCB22251EE89A00F28714 /* Assets.xcassets */,
 				5E4FCB24251EE89A00F28714 /* LaunchScreen.storyboard */,
 				5E4FCB27251EE89A00F28714 /* Info.plist */,
@@ -249,7 +249,7 @@
 			files = (
 				5E4FCB26251EE89A00F28714 /* LaunchScreen.storyboard in Resources */,
 				5E4FCB23251EE89A00F28714 /* Assets.xcassets in Resources */,
-				5E4FCB60251F88BA00F28714 /* Main.storyboard in Resources */,
+				5E1FD47C252553010054271D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,14 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E4FCB52251F11A500F28714 /* DecimalMinusTextField.swift in Sources */,
-				5E4FCB58251F295B00F28714 /* ColorViewController.swift in Sources */,
-				5E4FCB54251F11DA00F28714 /* SettingsViewController.swift in Sources */,
+				5E1FD47A252553010054271D /* UnitsAndModes.swift in Sources */,
+				5E1FD47D252553010054271D /* ColorViewController.swift in Sources */,
+				5E1FD478252553010054271D /* SettingsViewController.swift in Sources */,
+				5E1FD477252553010054271D /* DecimalMinusTextField.swift in Sources */,
 				5E4FCB1A251EE89100F28714 /* AppDelegate.swift in Sources */,
-				5E4FCB4E251F019600F28714 /* UnitsAndModes.swift in Sources */,
 				5E4FCB1C251EE89100F28714 /* SceneDelegate.swift in Sources */,
+				5E1FD479252553010054271D /* ActionButtonCalc.swift in Sources */,
 				5E4FCB62251FB92500F28714 /* ViewController.swift in Sources */,
-				5E4FCB50251F021300F28714 /* ActionButtonCalc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
