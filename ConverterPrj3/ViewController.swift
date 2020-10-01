@@ -27,7 +27,6 @@ class ViewController: ColorViewController, SettingsViewControllerDelegate {
 //======================================================================================
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 //======================================================================================
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {

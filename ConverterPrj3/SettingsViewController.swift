@@ -4,7 +4,7 @@
 //
 //  Created by Suman on 9/25/20.
 //  Copyright © 2020 Suman. All rights reserved.
-
+//
 import UIKit
 
 protocol SettingsViewControllerDelegate {
@@ -52,7 +52,6 @@ class SettingsViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
    
@@ -65,7 +64,6 @@ class SettingsViewController: UIViewController {
     @IBAction func savePressed(_ sender: UIBarButtonItem) {
         
         if let del = self.delegate {
-//            del.settingsChanged(distanceUnits: self.dUnits!, bearingUnits: self.bUnits!)
             switch(mode) {
             case .Length:
                 del.settingsChanged(fromUnits: Length_Unit(rawValue: fromUnits.text!)!, toUnits: Length_Unit(rawValue: toUnits.text!)!)
@@ -96,5 +94,3 @@ extension SettingsViewController : UIPickerViewDataSource, UIPickerViewDelegate 
     
     
     }
-
-
