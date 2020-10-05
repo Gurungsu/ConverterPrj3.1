@@ -28,6 +28,7 @@ class ConverterPrj3Tests: XCTestCase {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
+            // put the code you want to measuer
         }
     }
 
