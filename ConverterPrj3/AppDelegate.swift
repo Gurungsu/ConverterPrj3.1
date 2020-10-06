@@ -2,12 +2,12 @@
 //  AppDelegate.swift
 //  ConverterPrj3
 //
-//  Created by jumper on 9/25/20.
+//  Created by suman on 10/3/20.
 //  Copyright © 2020 jumper. All rights reserved.
 //
 import UIKit
 
-let BACKGROUND_COLOR = UIColor.init(red:0.0, green: 0.36, blue:0.42, alpha: 1.0) // TODO: Change later, this is to test
+let BACKGROUND_COLOR = UIColor.init(red:0.0, green: 0.36, blue:0.42, alpha: 1.0)
 let FOREGROUND_COLOR = UIColor.init(red: 0.9, green: 0.82, blue: 0.57, alpha: 1.0)
 let TRANSPARENT_COLOR = UIColor.init(red:1, green: 14, blue:1, alpha: 0.5)
 

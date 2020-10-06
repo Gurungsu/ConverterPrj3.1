@@ -27,12 +27,6 @@ struct LengthConversionKey : Hashable {
     var fromUnits : LengthUnit
 }
 
-// The following tables let you convert between units with a simple dictionary lookup. For example, assume
-// that the variable fromVal holds the value you are converting from:
-//
-//      let convKey =  LengthConversionKey(toUnits: .Miles, fromUnits: .Meters)
-//      let toVal = fromVal * lengthConversionTable[convKey]!;
-
 let lengthConversionTable : Dictionary<LengthConversionKey, Double> = [
     LengthConversionKey(toUnits: .Meters, fromUnits: .Meters) : 1.0,
     LengthConversionKey(toUnits: .Meters, fromUnits: .Yards) : 0.9144,

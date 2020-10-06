@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ConversionCalcButton: UIButton {
+class CalcButtonLayOut: UIButton {
 
     override func awakeFromNib() {
         
