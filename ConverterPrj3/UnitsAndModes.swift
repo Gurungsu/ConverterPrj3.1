@@ -6,11 +6,11 @@
 //  Copyright © 2020 Suman. All rights reserved.
 import Foundation
 
-enum Converter : String {
+enum CalculatorMode : String {
     case Length
     case Volume
 }
-enum Length_Unit : String, CaseIterable {
+enum LengthUnit : String, CaseIterable {
     case Meters = "Meters"
     case Yards = "Yards"
     case Miles = "Miles"
@@ -23,10 +23,15 @@ enum VolumeUnit : String, CaseIterable {
 }
 
 struct LengthConversionKey : Hashable {
-    var toUnits : Length_Unit
-    var fromUnits : Length_Unit
+    var toUnits : LengthUnit
+    var fromUnits : LengthUnit
 }
 
+// The following tables let you convert between units with a simple dictionary lookup. For example, assume
+// that the variable fromVal holds the value you are converting from:
+//
+//      let convKey =  LengthConversionKey(toUnits: .Miles, fromUnits: .Meters)
+//      let toVal = fromVal * lengthConversionTable[convKey]!;
 
 let lengthConversionTable : Dictionary<LengthConversionKey, Double> = [
     LengthConversionKey(toUnits: .Meters, fromUnits: .Meters) : 1.0,
@@ -83,4 +88,5 @@ extension CaseIterable where Self: Hashable {
     }
 }
 #endif
+
 

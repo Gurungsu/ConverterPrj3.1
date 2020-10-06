@@ -9,172 +9,146 @@ import UIKit
 
 class ViewController: ColorViewController, SettingsViewControllerDelegate {
 
-    @IBOutlet weak var From_Value: UITextField!
-    @IBOutlet weak var chage_to_value: UITextField!
+    @IBOutlet weak var fromField: UITextField!
+    @IBOutlet weak var toField: UITextField!
     @IBOutlet weak var fromUnits: UILabel!
     @IBOutlet weak var toUnits: UILabel!
-    @IBOutlet weak var level: UILabel!
+    @IBOutlet weak var calculatorHeader: UILabel!
     
-    var ActiveMode : Converter = .Length
+    var currentMode : CalculatorMode = .Length
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNeedsStatusBarAppearanceUpdate()
-        chage_to_value.delegate = self
-        From_Value.delegate = self
+        toField.delegate = self
+        fromField.delegate = self
+        self.view.backgroundColor = BACKGROUND_COLOR
     }
-//======================================================================================
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-//======================================================================================
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         self.view.endEditing(true)
     }
-//=======================================================================================
-    @IBAction func convertValue(_ sender: UIButton) {
-        var dataValue : UITextField?
-                    var fildData = ""
-        
-        
-        
-        if let fromData = From_Value.text {
-                    if fromData != "" {
-                
-                fildData = fromData
-                dataValue = chage_to_value
+    
+    @IBAction func calculatePressed(_ sender: UIButton) {
+        // determine source value of data for conversion and dest value for conversion
+        var dest : UITextField?
+
+        var val = ""
+        if let fromVal = fromField.text {
+            if fromVal != "" {
+                val = fromVal
+                dest = toField
             }
         }
-        
-        
-        if let toData = chage_to_value.text {
-            if toData != "" {
-                fildData = toData
-                dataValue = From_Value
+        if let toVal = toField.text {
+            if toVal != "" {
+                val = toVal
+                dest = fromField
             }
         }
-        
-        
-        if dataValue != nil {
-            switch(ActiveMode) {
-            case .Length: var from_Unit, to_Unit : Length_Unit
-                
-                
-                
-                
-                if dataValue == chage_to_value {
-                    from_Unit = Length_Unit(rawValue: fromUnits.text!)!
-                    to_Unit = Length_Unit(rawValue: toUnits.text!)!
-                    
-                    
+        if dest != nil {
+            switch(currentMode) {
+            case .Length:
+                var fUnits, tUnits : LengthUnit
+                if dest == toField {
+                    fUnits = LengthUnit(rawValue: fromUnits.text!)!
+                    tUnits = LengthUnit(rawValue: toUnits.text!)!
                 } else {
-                    from_Unit = Length_Unit(rawValue: toUnits.text!)!
-                    to_Unit = Length_Unit(rawValue: fromUnits.text!)!
+                    fUnits = LengthUnit(rawValue: toUnits.text!)!
+                    tUnits = LengthUnit(rawValue: fromUnits.text!)!
                 }
-                
-                
-                
-                if let dataFrom = Double(fildData) {
-                    let convKey =  LengthConversionKey(toUnits: to_Unit, fromUnits: from_Unit)
-                    let dataTo = dataFrom * lengthConversionTable[convKey]!;
-                    
-                    
-                    dataValue?.text = "\(dataTo)"
+                if let fromVal = Double(val) {
+                    let convKey =  LengthConversionKey(toUnits: tUnits, fromUnits: fUnits)
+                    let toVal = fromVal * lengthConversionTable[convKey]!;
+                    dest?.text = "\(toVal)"
                 }
-                
-                
             case .Volume:
-                
-                
-                var From_Unit, To_Unit : VolumeUnit
-                if dataValue == chage_to_value {
-                    From_Unit = VolumeUnit(rawValue: fromUnits.text!)!
-                    
-                    To_Unit = VolumeUnit(rawValue: toUnits.text!)!
+                var fUnits, tUnits : VolumeUnit
+                if dest == toField {
+                    fUnits = VolumeUnit(rawValue: fromUnits.text!)!
+                    tUnits = VolumeUnit(rawValue: toUnits.text!)!
                 } else {
-                    From_Unit = VolumeUnit(rawValue: toUnits.text!)!
-                    To_Unit = VolumeUnit(rawValue: fromUnits.text!)!
+                    fUnits = VolumeUnit(rawValue: toUnits.text!)!
+                    tUnits = VolumeUnit(rawValue: fromUnits.text!)!
                 }
-                
-                
-                
-                
-                if let fromVal = Double(fildData) {
-                    let convKey =  VolumeConversionKey(toUnits: To_Unit, fromUnits: From_Unit)
+                if let fromVal = Double(val) {
+                    let convKey =  VolumeConversionKey(toUnits: tUnits, fromUnits: fUnits)
                     let toVal = fromVal * volumeConversionTable[convKey]!;
-                    dataValue?.text = "\(toVal)"
+                    dest?.text = "\(toVal)"
                 }
             }
         }
         self.view.endEditing(true)
     }
- //==========================================================================================
+    
     @IBAction func clearPressed(_ sender: UIButton) {
-        self.From_Value.text = ""
-        self.chage_to_value.text = ""
+        self.fromField.text = ""
+        self.toField.text = ""
         self.view.endEditing(true)
     }
- //===========================================================================================
-    @IBAction func ModeAction(_ sender: UIButton) {
+    
+    @IBAction func modePressed(_ sender: UIButton) {
         clearPressed(sender)
-        switch (ActiveMode) {
+        switch (currentMode) {
         case .Length:
-            
-        
-    ActiveMode = .Volume
-            
-    fromUnits.text = VolumeUnit.Gallons.rawValue
-            
-        toUnits.text = VolumeUnit.Liters.rawValue
-            
-        From_Value.placeholder = "Enter volume in \(fromUnits.text!)"
-            
-chage_to_value.placeholder = "Enter volume in \(toUnits.text!)"
-            
-            
+            currentMode = .Volume
+            fromUnits.text = VolumeUnit.Gallons.rawValue
+            toUnits.text = VolumeUnit.Liters.rawValue
+            fromField.placeholder = "Enter volume in \(fromUnits.text!)"
+            toField.placeholder = "Enter volume in \(toUnits.text!)"
         case .Volume:
-    ActiveMode = .Length
-    fromUnits.text = Length_Unit.Yards.rawValue
-            toUnits.text = Length_Unit.Meters.rawValue
-            From_Value.placeholder = "Enter length in \(fromUnits.text!)"
-            
-            chage_to_value.placeholder = "Enter length in \(toUnits.text!)"
+            currentMode = .Length
+            fromUnits.text = LengthUnit.Yards.rawValue
+            toUnits.text = LengthUnit.Meters.rawValue
+            fromField.placeholder = "Enter length in \(fromUnits.text!)"
+            toField.placeholder = "Enter length in \(toUnits.text!)"
         }
-        level.text = "\(ActiveMode.rawValue) Conversion Calculator"
+        calculatorHeader.text = "\(currentMode.rawValue) Conversion Calculator"
         
     }
-  //===============================================================================================
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Go to Second Screen" {
+        if segue.identifier == "settingsSegue" {
             clearPressed(sender as! UIButton)
             if let  target = segue.destination.children[0] as? SettingsViewController {
-                target.mode = ActiveMode
+                target.mode = currentMode
+                target.fUnits = fromUnits.text
+                target.tUnits = toUnits.text
                 target.delegate = self
             }
         }
     }
-   //===============================================================================================
-    func settingsChanged(fromUnits: Length_Unit, toUnits: Length_Unit)
+    
+    func settingsChanged(fromUnits: LengthUnit, toUnits: LengthUnit)
     {
         self.fromUnits.text = fromUnits.rawValue
         self.toUnits.text = toUnits.rawValue
     }
-    //==============================================================================================
+    
     func settingsChanged(fromUnits: VolumeUnit, toUnits: VolumeUnit)
-            {
+    {
         self.fromUnits.text = fromUnits.rawValue
         self.toUnits.text = toUnits.rawValue
-            }
-        }
-   
-//====================================================================================================
-    extension ViewController : UITextFieldDelegate {
+    }
+}
+extension UINavigationController{
+    override open var preferredStatusBarStyle : UIStatusBarStyle{
+        return topViewController?.preferredStatusBarStyle ?? .default
+    }
+}
+
+extension ViewController : UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        if(textField == chage_to_value) {
-            From_Value.text = ""
+        if(textField == toField) {
+            fromField.text = ""
         } else {
-            chage_to_value.text = ""
+            toField.text = ""
         }
     }
 }

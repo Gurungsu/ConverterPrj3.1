@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E1FD47C252553010054271D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E1FD475252553010054271D /* Main.storyboard */; };
 		5E4FCB1A251EE89100F28714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB19251EE89100F28714 /* AppDelegate.swift */; };
 		5E4FCB1C251EE89100F28714 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB1B251EE89100F28714 /* SceneDelegate.swift */; };
 		5E4FCB23251EE89A00F28714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4FCB22251EE89A00F28714 /* Assets.xcassets */; };
@@ -15,7 +14,10 @@
 		5E4FCB31251EE89B00F28714 /* ConverterPrj3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB30251EE89B00F28714 /* ConverterPrj3Tests.swift */; };
 		5E4FCB3C251EE89B00F28714 /* ConverterPrj3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB3B251EE89B00F28714 /* ConverterPrj3UITests.swift */; };
 		5E4FCB62251FB92500F28714 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FCB61251FB92400F28714 /* ViewController.swift */; };
-		5E8A198F25256233004496D4 /* ActionButtonCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A198E25256233004496D4 /* ActionButtonCalc.swift */; };
+		5E652807252C18A4001E7D80 /* TestField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E652806252C18A4001E7D80 /* TestField.swift */; };
+		5E6BCE80252ACDE600609161 /* ConversionCalcButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6BCE7F252ACDE600609161 /* ConversionCalcButton.swift */; };
+		5E6BCE85252ACE4B00609161 /* ConversionCalcLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6BCE84252ACE4B00609161 /* ConversionCalcLabel.swift */; };
+		5E6BCEB4252AD4FA00609161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6BCEB2252AD4FA00609161 /* Main.storyboard */; };
 		5E8A199425256309004496D4 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A199325256309004496D4 /* ColorViewController.swift */; };
 		5E8A199C25256380004496D4 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A199B25256380004496D4 /* DecimalMinusTextField.swift */; };
 		5E8A19A4252563DF004496D4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A19A3252563DF004496D4 /* SettingsViewController.swift */; };
@@ -40,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E1FD475252553010054271D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5E4FCB16251EE89100F28714 /* ConverterPrj3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConverterPrj3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4FCB19251EE89100F28714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E4FCB1B251EE89100F28714 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +55,10 @@
 		5E4FCB3B251EE89B00F28714 /* ConverterPrj3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterPrj3UITests.swift; sourceTree = "<group>"; };
 		5E4FCB3D251EE89B00F28714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E4FCB61251FB92400F28714 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5E8A198E25256233004496D4 /* ActionButtonCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonCalc.swift; sourceTree = "<group>"; };
+		5E652806252C18A4001E7D80 /* TestField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestField.swift; sourceTree = "<group>"; };
+		5E6BCE7F252ACDE600609161 /* ConversionCalcButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionCalcButton.swift; sourceTree = "<group>"; };
+		5E6BCE84252ACE4B00609161 /* ConversionCalcLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionCalcLabel.swift; sourceTree = "<group>"; };
+		5E6BCEB3252AD4FA00609161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../all File/cis357-styled-calculator-partb/HW3-Solution/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		5E8A199325256309004496D4 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		5E8A199B25256380004496D4 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
 		5E8A19A3252563DF004496D4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -109,14 +113,16 @@
 		5E4FCB18251EE89100F28714 /* ConverterPrj3 */ = {
 			isa = PBXGroup;
 			children = (
-				5E8A198E25256233004496D4 /* ActionButtonCalc.swift */,
 				5E4FCB61251FB92400F28714 /* ViewController.swift */,
 				5E4FCB19251EE89100F28714 /* AppDelegate.swift */,
 				5E4FCB1B251EE89100F28714 /* SceneDelegate.swift */,
-				5E1FD475252553010054271D /* Main.storyboard */,
 				5E8A199325256309004496D4 /* ColorViewController.swift */,
-				5E8A19A3252563DF004496D4 /* SettingsViewController.swift */,
 				5E8A19AB2525645A004496D4 /* UnitsAndModes.swift */,
+				5E8A19A3252563DF004496D4 /* SettingsViewController.swift */,
+				5E6BCE7F252ACDE600609161 /* ConversionCalcButton.swift */,
+				5E652806252C18A4001E7D80 /* TestField.swift */,
+				5E6BCE84252ACE4B00609161 /* ConversionCalcLabel.swift */,
+				5E6BCEB2252AD4FA00609161 /* Main.storyboard */,
 				5E8A199B25256380004496D4 /* DecimalMinusTextField.swift */,
 				5E4FCB22251EE89A00F28714 /* Assets.xcassets */,
 				5E4FCB24251EE89A00F28714 /* LaunchScreen.storyboard */,
@@ -247,9 +253,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6BCEB4252AD4FA00609161 /* Main.storyboard in Resources */,
 				5E4FCB26251EE89A00F28714 /* LaunchScreen.storyboard in Resources */,
 				5E4FCB23251EE89A00F28714 /* Assets.xcassets in Resources */,
-				5E1FD47C252553010054271D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8A198F25256233004496D4 /* ActionButtonCalc.swift in Sources */,
 				5E8A199C25256380004496D4 /* DecimalMinusTextField.swift in Sources */,
 				5E4FCB1A251EE89100F28714 /* AppDelegate.swift in Sources */,
+				5E652807252C18A4001E7D80 /* TestField.swift in Sources */,
 				5E4FCB1C251EE89100F28714 /* SceneDelegate.swift in Sources */,
+				5E6BCE80252ACDE600609161 /* ConversionCalcButton.swift in Sources */,
 				5E8A199425256309004496D4 /* ColorViewController.swift in Sources */,
 				5E8A19AC2525645A004496D4 /* UnitsAndModes.swift in Sources */,
+				5E6BCE85252ACE4B00609161 /* ConversionCalcLabel.swift in Sources */,
 				5E4FCB62251FB92500F28714 /* ViewController.swift in Sources */,
 				5E8A19A4252563DF004496D4 /* SettingsViewController.swift in Sources */,
 			);
@@ -323,6 +331,14 @@
 				5E4FCB25251EE89A00F28714 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5E6BCEB2252AD4FA00609161 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E6BCEB3252AD4FA00609161 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
