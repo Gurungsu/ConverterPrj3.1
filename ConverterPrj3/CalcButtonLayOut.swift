@@ -18,7 +18,7 @@ class CalcButtonLayOut: UIButton {
         self.tintColor = BACKGROUND_COLOR
         self.layer.borderWidth = 1.0
         self.layer.borderColor = FOREGROUND_COLOR.cgColor
-        self.layer.cornerRadius = 5.0
+        self.layer.cornerRadius = 4.0
         
       
     }

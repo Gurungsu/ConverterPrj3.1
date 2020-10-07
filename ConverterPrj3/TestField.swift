@@ -19,7 +19,7 @@ class TextField: UITextField {
         self.layer.cornerRadius = 5.0
         
         self.textColor = FOREGROUND_COLOR
-        self.backgroundColor = UIColor.clear
+        self.backgroundColor = UIColor.green
         self.borderStyle = .roundedRect
         
         guard let ph = self.placeholder else{
