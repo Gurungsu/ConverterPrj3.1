@@ -7,9 +7,13 @@
 //
 import UIKit
 
-let BACKGROUND_COLOR = UIColor.init(red:0.000, green: 0.369, blue:0.420, alpha: 1.0) // TODO: Change later, this is to test
+let BACKGROUND_COLOR = UIColor.init(red:0.13, green: 0.65, blue:0.42, alpha: 0.9)
+
+
 let FOREGROUND_COLOR = UIColor.init(red: 0.937, green: 0.820, blue: 0.576, alpha: 1.0)
-let TRANSPARENT_COLOR = UIColor.init(red:1, green: 1, blue:1, alpha: 0.5)
+
+
+let TRANSPARENT_COLOR = UIColor.init(red:10, green: 21, blue:21, alpha: 0.5)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
