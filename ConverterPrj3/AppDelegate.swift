@@ -7,8 +7,8 @@
 //
 import UIKit
 
-let BACKGROUND_COLOR = UIColor.init(red:0.033, green: 0.362, blue:0.42, alpha: 1.0)
-let FOREGROUND_COLOR = UIColor.init(red: 0.9, green: 0.82, blue: 0.57, alpha: 1.0)
+let BACKGROUND_COLOR = UIColor.init(red:0.000, green: 0.369, blue:0.420, alpha: 1.0) // TODO: Change later, this is to test
+let FOREGROUND_COLOR = UIColor.init(red: 0.937, green: 0.820, blue: 0.576, alpha: 1.0)
 let TRANSPARENT_COLOR = UIColor.init(red:1, green: 1, blue:1, alpha: 0.5)
 
 @UIApplicationMain
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navAppearance.barTintColor = BACKGROUND_COLOR
         navAppearance.tintColor = FOREGROUND_COLOR
         navAppearance.isTranslucent = false
-        navAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.green]
+        navAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         
         
         return true

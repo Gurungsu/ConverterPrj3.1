@@ -8,10 +8,9 @@
 
 import UIKit
 
-class TextField: UITextField {
+class ConversionCalcTextField: UITextField {
     
     override func awakeFromNib(){
-
         
         self.tintColor = FOREGROUND_COLOR
         self.layer.borderWidth = 1.0
@@ -19,7 +18,7 @@ class TextField: UITextField {
         self.layer.cornerRadius = 5.0
         
         self.textColor = FOREGROUND_COLOR
-        self.backgroundColor = UIColor.green
+        self.backgroundColor = UIColor.clear
         self.borderStyle = .roundedRect
         
         guard let ph = self.placeholder else{

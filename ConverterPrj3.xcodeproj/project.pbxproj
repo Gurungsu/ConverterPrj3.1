@@ -17,7 +17,6 @@
 		5E652807252C18A4001E7D80 /* TestField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E652806252C18A4001E7D80 /* TestField.swift */; };
 		5E65280F252C2A95001E7D80 /* CalcButtonLayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E65280E252C2A95001E7D80 /* CalcButtonLayOut.swift */; };
 		5E6BCE85252ACE4B00609161 /* TextLebleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6BCE84252ACE4B00609161 /* TextLebleColor.swift */; };
-		5E6BCEB4252AD4FA00609161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6BCEB2252AD4FA00609161 /* Main.storyboard */; };
 		5E8A199425256309004496D4 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A199325256309004496D4 /* ColorViewController.swift */; };
 		5E8A199C25256380004496D4 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A199B25256380004496D4 /* DecimalMinusTextField.swift */; };
 		5E8A19A4252563DF004496D4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A19A3252563DF004496D4 /* SettingsViewController.swift */; };
@@ -58,7 +57,6 @@
 		5E652806252C18A4001E7D80 /* TestField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestField.swift; sourceTree = "<group>"; };
 		5E65280E252C2A95001E7D80 /* CalcButtonLayOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcButtonLayOut.swift; sourceTree = "<group>"; };
 		5E6BCE84252ACE4B00609161 /* TextLebleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLebleColor.swift; sourceTree = "<group>"; };
-		5E6BCEB3252AD4FA00609161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../all File/cis357-styled-calculator-partb/HW3-Solution/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		5E8A199325256309004496D4 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		5E8A199B25256380004496D4 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
 		5E8A19A3252563DF004496D4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -113,20 +111,19 @@
 		5E4FCB18251EE89100F28714 /* ConverterPrj3 */ = {
 			isa = PBXGroup;
 			children = (
-				5E4FCB61251FB92400F28714 /* ViewController.swift */,
 				5E4FCB19251EE89100F28714 /* AppDelegate.swift */,
+				5E4FCB61251FB92400F28714 /* ViewController.swift */,
 				5E65280E252C2A95001E7D80 /* CalcButtonLayOut.swift */,
-				5E4FCB1B251EE89100F28714 /* SceneDelegate.swift */,
-				5E8A199325256309004496D4 /* ColorViewController.swift */,
-				5E8A19AB2525645A004496D4 /* UnitsAndModes.swift */,
-				5E8A19A3252563DF004496D4 /* SettingsViewController.swift */,
-				5E652806252C18A4001E7D80 /* TestField.swift */,
-				5E6BCE84252ACE4B00609161 /* TextLebleColor.swift */,
-				5E6BCEB2252AD4FA00609161 /* Main.storyboard */,
 				5E8A199B25256380004496D4 /* DecimalMinusTextField.swift */,
 				5E4FCB22251EE89A00F28714 /* Assets.xcassets */,
 				5E4FCB24251EE89A00F28714 /* LaunchScreen.storyboard */,
 				5E4FCB27251EE89A00F28714 /* Info.plist */,
+				5E8A19AB2525645A004496D4 /* UnitsAndModes.swift */,
+				5E8A19A3252563DF004496D4 /* SettingsViewController.swift */,
+				5E4FCB1B251EE89100F28714 /* SceneDelegate.swift */,
+				5E652806252C18A4001E7D80 /* TestField.swift */,
+				5E6BCE84252ACE4B00609161 /* TextLebleColor.swift */,
+				5E8A199325256309004496D4 /* ColorViewController.swift */,
 			);
 			path = ConverterPrj3;
 			sourceTree = "<group>";
@@ -253,7 +250,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E6BCEB4252AD4FA00609161 /* Main.storyboard in Resources */,
 				5E4FCB26251EE89A00F28714 /* LaunchScreen.storyboard in Resources */,
 				5E4FCB23251EE89A00F28714 /* Assets.xcassets in Resources */,
 			);
@@ -331,14 +327,6 @@
 				5E4FCB25251EE89A00F28714 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		5E6BCEB2252AD4FA00609161 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E6BCEB3252AD4FA00609161 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -6,10 +6,9 @@
 //  Copyright © 2020 jumper. All rights reserved.
 //
 
-
 import UIKit
 
-class CalcButtonLayOut: UIButton {
+class ConversionCalcButton: UIButton {
 
     override func awakeFromNib() {
         
@@ -18,9 +17,9 @@ class CalcButtonLayOut: UIButton {
         self.tintColor = BACKGROUND_COLOR
         self.layer.borderWidth = 1.0
         self.layer.borderColor = FOREGROUND_COLOR.cgColor
-        self.layer.cornerRadius = 4.0
+        self.layer.cornerRadius = 5.0
         
-      
+     
     }
 
 }
